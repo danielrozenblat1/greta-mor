@@ -1,0 +1,130 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: "Assistant", sans-serif;
+  text-align: center;
+  margin: 1% auto;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  direction: rtl;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+
+  direction: rtl;
+  border-radius: 20px;
+}
+
+.input, .button {
+  position: relative;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  direction: rtl;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  color: #4a4a4a;
+  font-family: "AssistantR", sans-serif;
+  outline: none;
+  transition: all 0.3s ease;
+  background: rgba(249, 223, 255, 0.7);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.input::before, .button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(230, 230, 250, 0.2),  /* Lavender */
+    rgba(205, 105, 255, 0.2)   /* Light Purple */
+  );
+  z-index: -1;
+  filter: blur(20px);
+}
+
+.input::placeholder {
+  color: #777;
+  opacity: 0.7;
+}
+
+.input:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button {
+  margin-top: 20px;
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  color: #4a4a4a;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 350px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .form {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+  .title {
+    font-size: 2rem;
+    width: 90%;
+  }
+  
+  .form {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 550px) {
+  .title {
+    font-size: 2.2rem;
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 750px) {
+  .title {
+    font-size: 2.2rem;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 950px) {
+  .title {
+    font-size: 2.5rem;
+    width: 90%;
+  }
+}

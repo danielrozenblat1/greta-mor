@@ -1,0 +1,162 @@
+/* הקלאסים המקוריים נשארים ללא שינוי */
+.description {
+    font-family: 'Assistant';
+    font-size: 1.8rem;
+    direction: rtl;
+    margin: 1% auto;
+    text-align: center;
+}
+
+.descriptionL {
+    font-family: 'AssistantR';
+    font-size: 1.4rem;
+    direction: rtl;
+    margin: 1% auto;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Assistant';
+    font-size: 3rem;
+    direction: rtl;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2% auto;
+}
+
+/* Responsive styles עם תיאורים גדולים יותר ורוחב מוגבל */
+@media (max-width: 1250px) {
+    .title {
+        font-size: 2.8rem;
+    }
+    .description {
+        font-size: 1.8rem;
+    }
+    .descriptionL {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    .title {
+        font-size: 2.7rem;
+    }
+    .description {
+        font-size: 1.75rem;
+    }
+    .descriptionL {
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 1050px) {
+    .title {
+        font-size: 2.6rem;
+    }
+    .description {
+        font-size: 1.7rem;
+    }
+    .descriptionL {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    .description {
+        font-size: 1.65rem;
+    }
+    .descriptionL {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .title {
+        font-size: 2.4rem;
+    }
+    .description {
+        font-size: 1.6rem;
+    }
+    .descriptionL {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .title {
+        font-size: 2.3rem;
+    }
+    .description {
+        font-size: 1.55rem;
+    }
+    .descriptionL {
+        font-size: 1.15rem;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .description, .descriptionL {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .title {
+        font-size: 2.2rem;
+    }
+    .description {
+        font-size: 1.5rem;
+    }
+    .descriptionL {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .title {
+        font-size: 2.1rem;
+    }
+    .description {
+        font-size: 1.45rem;
+    }
+    .descriptionL {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .title {
+        font-size: 2rem;
+    }
+    .description {
+        font-size: 1.4rem;
+    }
+    .descriptionL {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .title {
+        font-size: 1.9rem;
+    }
+    .description {
+        font-size: 1.35rem;
+    }
+    .descriptionL {
+        font-size: 0.95rem;
+    }
+}

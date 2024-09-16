@@ -1,0 +1,109 @@
+.faqItem {
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 500px;
+    margin: 15px auto;
+    direction: rtl;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  
+  .questionButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: #e5cfff;
+    border: none;
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+  
+    transition: background-color 0.3s ease;
+  }
+  
+  .questionButton:hover {
+    opacity: 0.9;
+  }
+  
+  .questionText {
+    font-family: 'AssistantR', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: black;
+    direction: rtl;
+    flex-grow: 1;
+  }
+  
+  .iconWrapper {
+    width: 24px;
+    flex-shrink: 0;
+    color:black;
+    text-decoration: none;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+  }
+  
+  .answerContainer {
+    overflow: hidden;
+    transition: height 0.3s ease;
+    background-color: #f5e2fe;
+    margin: auto;
+    
+    direction: rtl;
+  }
+  
+  .answerText {
+    font-family: 'AssistantR', sans-serif;
+    font-size: 1.05rem;
+    padding: 1rem;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  
+  /* Responsive styles with fixed pixel widths */
+  @media (max-width: 350px) {
+    .faqItem {
+      width: 280px;
+    }
+    .questionText {
+        font-size: 1rem;
+    }
+    .answerText {
+        font-size: 0.9rem; 
+    }
+  }
+  
+  @media (min-width: 350px) and (max-width: 450px) {
+    .faqItem {
+      width: 320px;
+    }
+    .questionText {
+        font-size: 1.05rem;
+    }
+    .answerText {
+        font-size: 0.95rem; 
+    }
+  }
+  
+  @media (min-width: 450px) and (max-width: 550px) {
+    .faqItem {
+      width: 400px;
+    }
+    .questionText {
+        font-size: 1.1rem;
+    }
+    .answerText {
+        font-size: 1rem; 
+    }
+  }
+  

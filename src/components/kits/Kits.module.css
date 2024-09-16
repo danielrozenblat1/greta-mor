@@ -1,0 +1,129 @@
+.kitsWrapper {
+    font-family: 'AssistantR', sans-serif;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    direction: rtl;
+  }
+  
+  .kitsTitle {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .kitsSubtitle {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #4a4a4a;
+    text-align: center;
+    margin: 2rem 0 1rem;
+  }
+  
+  .benefitsList, .kitList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .benefitItem, .kitItem {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: #4a4a4a;
+  }
+  
+  .checkmark {
+    color: #8a2be2;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .kitsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .kitCard {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .kitTitle {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #4a4a4a;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .priceNote {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .imageContainer {
+    text-align: center;
+    margin: 1rem 0 2rem;
+  }
+  
+  .kitImage {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 900px) {
+    .kitImage {
+      width: 50%;
+      height: auto;
+      aspect-ratio: 3 / 2;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .kitsWrapper {
+      padding: 1rem;
+    }
+  
+    .kitsTitle {
+      font-size: 1.5rem;
+    }
+  
+    .kitsSubtitle {
+      font-size: 1.2rem;
+    }
+  
+    .benefitItem, .kitItem {
+      font-size: 0.9rem;
+    }
+  
+    .kitTitle {
+      font-size: 1.1rem;
+    }
+  
+    .kitImage {
+      width: 70%;
+      height: auto;
+      aspect-ratio: 3 / 2;
+    }
+  }

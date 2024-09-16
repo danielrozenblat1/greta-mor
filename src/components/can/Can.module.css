@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin: 15px auto;
+  color: #4a0e4e;
+  padding: 0.2rem 0.55rem;
+  border-radius: 0.5rem;
+  direction: rtl;
+  width: 320px;
+  background: linear-gradient(135deg, rgba(230, 230, 250, 0.7), rgba(255, 240, 245, 0.7));
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 2px 5px rgba(218, 112, 214, 0.2),
+    0 -1px 5px rgba(230, 230, 250, 0.2),
+    2px 2px 5px rgba(199, 21, 133, 0.1),
+    -2px -2px 5px rgba(230, 230, 250, 0.1),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.5),
+    inset -1px -1px 2px rgba(199, 21, 133, 0.1);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  background: linear-gradient(135deg, rgba(230, 230, 250, 0.8), rgba(255, 240, 245, 0.8));
+  box-shadow: 
+    0 3px 7px rgba(218, 112, 214, 0.3),
+    0 -2px 7px rgba(230, 230, 250, 0.3),
+    3px 3px 7px rgba(199, 21, 133, 0.2),
+    -3px -3px 7px rgba(230, 230, 250, 0.2),
+    inset 1px 1px 3px rgba(255, 255, 255, 0.6),
+    inset -1px -1px 3px rgba(199, 21, 133, 0.2);
+}
+
+.text {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.15rem;
+  direction: rtl;
+  margin-right: 10px;
+  width: 80%;
+  color: #4a0e4e;
+}
+
+.icon {
+  width: 20%;
+}
+
+@media (max-width: 350px) {
+  .container {
+    width: 270px;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .text {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .icon {
+    width: 30%;
+    text-align: center;
+  }
+}
