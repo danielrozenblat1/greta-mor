@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Kits.module.css';
 import kits from "../../images/גרטה מור תלמידות 4.png"
+import { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 const CourseKits = () => {
   const personalBenefits = [
     'יחס אישי',
@@ -26,6 +28,20 @@ const CourseKits = () => {
     'ברבסייד חומר חיטוי', '30 גוונים של ג׳לים koyo'
   ];
 
+  useEffect(()=>{
+    ScrollReveal().reveal(`.${styles.kitsTitle}`, {
+      duration: 1000,
+      distance: "50px",
+      origin: "left",
+      easing: "ease-out",
+      reset: false,
+      viewFactor: 0.2,
+      interval: 300,
+      delay: 200,
+      scale: 1,
+    });
+
+  },[])
   return (
     <div className={styles.kitsWrapper}>
       <h2 className={styles.kitsTitle}>בשני הקורסים תקבלו ממני:</h2>

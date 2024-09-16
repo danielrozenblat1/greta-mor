@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './Akril.module.css';
 import Button from '../button/Button';
-
+import ScrollReveal from 'scrollreveal';
 const AcrylicCourse = () => {
   const courseDetails = [
     {
@@ -39,7 +39,41 @@ const AcrylicCourse = () => {
     'ליווי כל הדרך להצלחה'
   ];
 
-
+  useEffect(()=>{
+    ScrollReveal().reveal(`.${styles.meetingTitle}`, {
+      duration: 1000,
+      distance: "50px",
+      origin: "left",
+      easing: "ease-out",
+      reset: false,
+      viewFactor: 0.2,
+      interval: 300,
+      delay: 200,
+      scale: 1,
+    });
+    ScrollReveal().reveal(`.${styles.meetingNumber}`, {
+        duration: 1000,
+        distance: "50px",
+        origin: "right",
+        easing: "ease-out",
+        reset: false,
+        viewFactor: 0.2,
+        interval: 300,
+        delay: 200,
+        scale: 1,
+      });
+      ScrollReveal().reveal(`.${styles.meetingDescription}`, {
+        duration: 1000,
+        distance: "50px",
+        origin: "bottom",
+        easing: "ease-out",
+        reset: false,
+        viewFactor: 0.2,
+        interval: 300,
+        delay: 200,
+        scale: 1,
+      });
+  },[])
   return <>
     <div className={styles.courseWrapper} id="קורס אקריל">
       <div className={styles.container}>

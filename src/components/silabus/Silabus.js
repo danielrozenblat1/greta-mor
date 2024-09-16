@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './Silabus.module.css';
 import Button from '../button/Button';
-
+import ScrollReveal from 'scrollreveal';
 const Syllabus = () => {
   const meetings = [
     {
@@ -34,7 +34,41 @@ const Syllabus = () => {
     'תעודה מקצועית מטעם האקדמיה "NAIL ACADEMY" בהנהלת גרטה מור',
     'ליווי לאחר הקורס עד להצלחת התלמידה והשתלבותה בשוק העבודה'
   ];
-
+  useEffect(()=>{
+    ScrollReveal().reveal(`.${styles.meetingTitle}`, {
+      duration: 1000,
+      distance: "50px",
+      origin: "left",
+      easing: "ease-out",
+      reset: false,
+      viewFactor: 0.2,
+      interval: 300,
+      delay: 200,
+      scale: 1,
+    });
+    ScrollReveal().reveal(`.${styles.meetingNumber}`, {
+        duration: 1000,
+        distance: "50px",
+        origin: "right",
+        easing: "ease-out",
+        reset: false,
+        viewFactor: 0.2,
+        interval: 300,
+        delay: 200,
+        scale: 1,
+      });
+      ScrollReveal().reveal(`.${styles.meetingDescription}`, {
+        duration: 1000,
+        distance: "50px",
+        origin: "bottom",
+        easing: "ease-out",
+        reset: false,
+        viewFactor: 0.2,
+        interval: 300,
+        delay: 200,
+        scale: 1,
+      });
+  },[])
   return (
     <>
       <div className={styles.syllabusWrapper} id="קורס לק גל">
