@@ -17,7 +17,7 @@ const FAQItem = ({ question, answer }) => {
   }, [isOpen]);
 
   return (
-    <div className={styles.faqItem}>
+    <div className={styles.faqItem} >
       <button
         className={styles.questionButton}
         onClick={() => setIsOpen(!isOpen)}
