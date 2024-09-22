@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import styles from './Akril.module.css';
 import Button from '../button/Button';
 import ScrollReveal from 'scrollreveal';
+import AcrylicCourseKits from '../kits/AkrilKits';
 const AcrylicCourse = () => {
   const courseDetails = [
     {
@@ -103,9 +104,11 @@ const AcrylicCourse = () => {
             </div>
           ))}
         </div>
-    
+        <AcrylicCourseKits/>
       </div>
+
     </div>
+    
     <Button text="גרטה, אני רוצה לשמוע עוד"/>
   </>
 };

@@ -13,6 +13,8 @@ import Recommends from './components/recommends/Students';
 import Bikorot from './components/recommends/Recommends';
 import { useEffect, useState } from 'react';
 import ByMe from './components/ByMe/ByMe';
+import Results from './components/recommends/Results';
+import AdvancedTrainingCourses from './components/Hishtalmut/More';
 
 function App() {
 
@@ -44,10 +46,12 @@ function App() {
   <SecondScreen/>
   <Syllabus/>
   <AcrylicCourse/>
-  <CourseKits/>
+
   <FormScreen/>
+  <AdvancedTrainingCourses/>
   <AboutMe/>
   <Recommends/>
+  <Results/>
   <Bikorot/>
   <ForthScreen/>
   <ByMe/>

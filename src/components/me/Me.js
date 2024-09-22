@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Me.module.css';
-import meshi from "../../images/גרטה מור.jpeg"
+import meshi from "../../images/גרטה מור.png"
 
 const AboutMe = () => {
   return <>

@@ -78,7 +78,10 @@ const CourseKits = () => {
           </ul>
         </div>
       </div>
-      <p className={styles.priceNote}>* מחיר הערכות אינו כלול במחיר הקורס</p>
+      <p className={styles.priceNote}>* מחיר הערכות אינו כלול במחיר הקורס
+        <br/>
+        ניתן לרכוש ערכה באופן עצמאי לפני ההגעה לקורס
+      </p>
     </div>
   );
 };

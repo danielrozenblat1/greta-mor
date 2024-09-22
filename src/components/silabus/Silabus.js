@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import styles from './Silabus.module.css';
 import Button from '../button/Button';
 import ScrollReveal from 'scrollreveal';
+import CourseKits from '../kits/Kits';
 const Syllabus = () => {
   const meetings = [
     {
@@ -101,6 +102,7 @@ const Syllabus = () => {
               </div>
             ))}
           </div>
+          <CourseKits/>
         </div>
       </div>
       <Button text="גרטה, אני רוצה לשמוע עוד" />

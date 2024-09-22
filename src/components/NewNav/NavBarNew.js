@@ -60,7 +60,7 @@ const NavBarNew = () => {
     }
   };
 
-  const menuItems = ['קורס לק גל' ,'קורס אקריל', 'שאלות תשובות', 'מי אני'];
+  const menuItems = ['קורס לק גל' ,'קורס אקריל','השתלמויות', 'שאלות תשובות', 'מי אני'];
 
   return (
     <nav className={`${styles.navbar} ${isSticky ? styles.sticky : ''}`}>
