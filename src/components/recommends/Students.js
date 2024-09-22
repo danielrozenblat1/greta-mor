@@ -14,11 +14,11 @@ import result12 from "../../images/גרטה מור תלמידות 12.png"
 import result13 from "../../images/גרטה מור תלמידות 13.png"
 import result14 from "../../images/גרטה מור תלמידות 14.png"
 import result15 from "../../images/גרטה מור תלמידות 15.png"
-import result16 from "../../images/גרטה מור תלמידות 16.png"
-import result17 from "../../images/גרטה מור תלמידות 17.png"
-import result18 from "../../images/גרטה מור תלמידות 18.png"
-import result19 from "../../images/גרטה מור תלמידות 19.png"
-import result20 from "../../images/גרטה מור תלמידות 20.png"
+import result16 from "../../images/גרטה מור תלמידות 21.png"
+import result17 from "../../images/גרטה מור תלמידות 22.png"
+import result18 from "../../images/גרטה מור תלמידות 23.png"
+import result19 from "../../images/גרטה מור תלמידות 24.png"
+
 
 
 
@@ -76,10 +76,7 @@ const Recommends=()=>{
           type: 'image',
           src: result19,
         },
-        {
-          type: 'image',
-          src: result20,
-        },
+      
         {
           type: 'image',
           src: result6,
@@ -120,7 +117,22 @@ const Recommends=()=>{
           type: 'image',
           src: result15,
         },
-   
+        {
+          type: 'image',
+          src: result16,
+        },
+        {
+          type: 'image',
+          src: result17,
+        },
+        {
+          type: 'image',
+          src: result18,
+        },
+        {
+          type: 'image',
+          src: result19,
+        },
         ];  
 return <>
 <div className={styles.title} id="תוצאות">קצת מהבנות שעברו דרכי</div>
