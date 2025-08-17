@@ -1,0 +1,183 @@
+.courseWrapper {
+    font-family: 'AssistantR', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    direction: rtl;
+  }
+  
+  .container {
+    max-width: 900px;
+    width: 100%;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  
+  .mainTitle {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #a14bb5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description, .courseInfo {
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    text-align: right;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .courseInfo {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .courseInfo h3 {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: #4a4a4a;
+    margin-bottom: 1rem;
+  }
+  
+  .courseItem, .benefitItem {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+  
+  .checkmark {
+    color: #8a2be2;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .coursesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .courseCard {
+    position: relative;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(173, 216, 230, 0.3);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .courseCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      45deg,
+      rgba(173, 216, 230, 0.2),
+      rgba(255, 105, 180, 0.2)
+    );
+    z-index: -1;
+    filter: blur(20px);
+  }
+  
+  .courseCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .courseContent {
+    position: relative;
+    padding: 1.5rem;
+    z-index: 1;
+  }
+  
+  .courseTitle {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    margin-bottom: 0.5rem;
+  }
+  
+  .courseDescription {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #4a4a4a;
+    line-height: 1.4;
+    text-align: right;
+    margin-bottom: 1rem;
+  }
+  
+  .benefitsList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .conclusion {
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 600px) {
+    .courseWrapper {
+      padding: 1rem;
+    }
+  
+    .container {
+      padding: 1rem;
+    }
+  
+    .mainTitle {
+      font-size: 2rem;
+    }
+  
+    .description, .courseInfo {
+      font-size: 1rem;
+    }
+  
+    .courseTitle {
+      font-size: 1.1rem;
+    }
+  
+    .courseDescription {
+      font-size: 0.9rem;
+    }
+  
+    .courseInfo h3 {
+      font-size: 1.1rem;
+    }
+  
+    .courseItem, .benefitItem {
+      font-size: 0.9rem;
+    }
+  
+    .conclusion {
+      font-size: 1rem;
+    }
+  }
